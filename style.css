@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #fdf6f0, #f8f0ff);
+  color: #333;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.keyboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.keyboard-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.keyboard {
+  background: linear-gradient(to bottom, #ffe6f0, #ffd9ec);
+  border: none;
+  border-radius: 12px;
+  padding: 16px 22px;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 6px 0 #d4a3c2, 0 8px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  user-select: none;
+  transform: perspective(1px) translateZ(0);
+}
+
+.keyboard:hover {
+  background: linear-gradient(to bottom, #ffdce8, #ffcde1);
+}
+
+.keyboard:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #d4a3c2, inset 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wide {
+  padding: 16px 30px;
+}
+
+.space {
+  width: 320px;
+}
